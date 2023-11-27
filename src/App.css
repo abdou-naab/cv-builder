@@ -91,21 +91,21 @@
   #controls {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 3px;
     z-index: 2;
   }
   #controls nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 0;
-    padding: 8px 2px;
+    padding: 10px 3px 8px 3px;
     gap: 1px;
   }
   .control-nav-item {
-    width: auto;
-    padding: 3px 5px;
     border-radius: 0;
     outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .control-nav-item span {
     font-size: clamp(8px, 4vw, 0.9rem);

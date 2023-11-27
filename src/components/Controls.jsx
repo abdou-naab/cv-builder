@@ -22,6 +22,14 @@ function Controls({ activeNav, setActiveNav, setLastActiveNav }) {
         top: 0,
         behavior: "smooth",
       });
+    } else {
+      let element = document.querySelector("#preview .a4");
+
+      var opt = {
+        filename: "cv.pdf",
+      };
+      // eslint-disable-next-line no-undef
+      html2pdf().set(opt).from(element).save();
     }
   };
   return (
