@@ -1,0 +1,158 @@
+#root {
+  background-color: var(--bg-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--padd-left);
+}
+
+.left-root > * > * {
+  width: 90%;
+}
+.left-root > * {
+  width: 100%;
+}
+.left-root {
+  margin: var(--padd-top) 0 var(--padd-top) var(--padd-left);
+  width: 35%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.right-root {
+  margin: var(--padd-top) var(--padd-left) var(--padd-top) 0;
+}
+
+@media (max-width: 1048px) {
+  .left-root {
+    width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .left-root {
+    font-size: 12px;
+  }
+  :root {
+    --sections-padd: 4px;
+    --radius: 9px;
+    --padd-left: 2px;
+  }
+  #preview .a4 {
+    width: 400px;
+  }
+  .a4 main {
+    font-size: 0.6rem;
+  }
+  .a4-info .school,
+  .a4-info .company,
+  .a4-info .degree,
+  .a4-info .position {
+    font-size: 0.7rem;
+  }
+  .a4-info > div:first-child > *:last-child,
+  .a4-info > div:nth-child(2) > *:last-child {
+    margin-top: 0.4rem;
+  }
+  .a4 > *,
+  .a4 > main > * {
+    gap: 0.5rem;
+  }
+  .a4 header {
+    padding: 0.7rem 0.4rem;
+    font-size: 12px;
+  }
+  .a4 header svg {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .a4 header h1 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  #root {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .left-root,
+  .right-root {
+    margin: 8px 0;
+  }
+  .left-root > * > * {
+    width: 100%;
+  }
+  .left-root {
+    width: 80%;
+  }
+  #controls {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #controls nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 0;
+    padding: 8px 2px;
+    gap: 1px;
+  }
+  .control-nav-item {
+    width: auto;
+    padding: 3px 5px;
+    border-radius: 0;
+    outline: none;
+  }
+  .control-nav-item span {
+    font-size: clamp(8px, 4vw, 0.9rem);
+  }
+  .control-nav-item svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  #preview {
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  #preview .a4 {
+    width: 100%;
+    margin: 0 4px;
+  }
+  .a4 main {
+    padding: 0;
+  }
+  .a4 main > * {
+    padding: 0.5rem 0;
+    font-size: 0.4rem;
+  }
+  .a4-info {
+    padding-left: 1.1rem;
+    padding-right: 1.9rem;
+  }
+  .a4 h3 {
+    font-size: 0.7rem;
+  }
+  .a4-info .school,
+  .a4-info .company,
+  .a4-info .degree,
+  .a4-info .position {
+    font-size: 0.5rem;
+  }
+
+  .a4 header {
+    padding: 0.5rem 0.3rem;
+    font-size: 10px;
+  }
+  .a4 header svg {
+    width: 0.55rem;
+    height: 0.55rem;
+  }
+  .a4 header h1 {
+    font-size: 1rem;
+  }
+}

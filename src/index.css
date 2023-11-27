@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "serif-font";
+  src: url("./assets/CrimsonPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "serif-font";
+  src: url("./assets/CrimsonPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "serif-font";
+  src: url("./assets/CrimsonPro-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "sans-font";
+  src: url("./assets/GlacialIndifference-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "sans-font";
+  src: url("./assets/GlacialIndifference-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "sans-font";
+  src: url("./assets/GlacialIndifference-Italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "mono-font";
+  src: url("./assets/UbuntuMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "mono-font";
+  src: url("./assets/UbuntuMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "mono-font";
+  src: url("./assets/UbuntuMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --bg-color: #f3f4f6;
+  --padd-top: 2rem;
+  --padd-left: 1rem;
+  --sections-padd: 12px;
+  --radius: 12px;
+  --accent-color: #5265ad;
+  --contrast-color: #ffffff;
+  --contrast-color2: #f5f5f5;
+  --font-used: "serif-font";
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+
+  font-family: BlinkMacSystemFont, Ubuntu, Cantarell, "Segoe UI", Roboto, Oxygen,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}

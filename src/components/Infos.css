@@ -1,0 +1,186 @@
+#infos {
+  grid-area: i;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#infos article {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#infos article form {
+  padding: calc(var(--sections-padd) * 1.5) var(--sections-padd);
+  border-radius: var(--radius);
+  background-color: white;
+  width: 100%;
+}
+hr {
+  border: 3px solid whitesmoke;
+  border-radius: var(--radius);
+  margin: var(--sections-padd) 0;
+}
+.form-title {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+}
+.form-title > div:first-child {
+  display: flex;
+  gap: var(--sections-padd);
+}
+.form-title button[type="button"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+.form-title button[type="button"].expended {
+  transform: rotate(180deg);
+}
+form .add-infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(var(--sections-padd) * 1.5);
+}
+form .add-infos button[type="button"] {
+  background-color: transparent;
+  border: 5px solid whitesmoke;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+form .infos-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 calc(var(--sections-padd) * 1.5);
+}
+form .drop-down {
+  display: none;
+  overflow: hidden;
+}
+form .drop-down.active {
+  animation: dropDown 0.3s ease-out;
+  display: block;
+}
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.edit-element-buttons {
+  padding: calc(var(--sections-padd) * 2) var(--sections-padd);
+  display: flex;
+  justify-content: space-between;
+}
+.edit-element-buttons div {
+  display: flex;
+  gap: var(--sections-padd);
+}
+.edit-element-buttons button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.edit-element-buttons button:active {
+  transform: scale(0.94);
+}
+
+form .infos-element svg {
+  justify-self: center;
+  cursor: pointer;
+}
+form .edit-element,
+form .infos-element {
+  margin: calc(var(--sections-padd) / 1.25) 0;
+}
+
+.content-infos input,
+.content-infos textarea {
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  padding: calc(var(--sections-padd) / 1.25);
+  background-color: whitesmoke;
+  outline: none;
+}
+#infos h3 {
+  margin: 0;
+}
+.la-in-gp {
+  display: flex;
+  flex-direction: column;
+}
+
+.customize-info section {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--sections-padd) / 1.25);
+  width: 100%;
+
+  padding: calc(var(--sections-padd) * 1.5) var(--sections-padd);
+  border-radius: var(--radius);
+  background-color: white;
+}
+
+#infos .options {
+  display: flex;
+  gap: calc(var(--sections-padd) * 3);
+}
+#infos .options .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#infos .options .option > div:first-child {
+  border: 2px solid black;
+  width: clamp(24px, 9vw, 48px);
+  height: clamp(24px, 9vw, 48px);
+}
+.customize-info-layout .option:active {
+  transform: scale(0.94);
+}
+.customize-info-layout .option .right {
+  display: grid;
+  grid-template-columns: 3fr 1.7fr;
+}
+.customize-info-layout .option .left {
+  display: grid;
+  grid-template-columns: 1.7fr 3fr;
+}
+.customize-info-layout .option .top {
+  display: grid;
+  grid-template-rows: 1.7fr 3fr;
+}
+.customize-info-fonts .option > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customize-info-colors label {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--sections-padd) * 1.5);
+}
+
+.customize-info-colors input[type="color"] {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
