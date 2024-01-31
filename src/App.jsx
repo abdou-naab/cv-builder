@@ -14,14 +14,14 @@ let educ1 = {
 let educ2 = {
   id: Math.random().toString(36).substring(2),
   school: "high school",
-  degree: "ta9yya na9yya",
+  degree: "some degree",
   start: "08/13/17",
   location: "Dzair dz",
 };
 let expe1 = {
   id: Math.random().toString(36).substring(2),
   company: "Umbrella Inc.",
-  position: "Ana sass ana rass",
+  position: "absolute",
   start: "2024",
   end: "til death",
   location: "ghir hna",
